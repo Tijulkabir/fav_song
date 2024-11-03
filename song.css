@@ -1,0 +1,67 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-page setup */
+body, html {
+    min-height: 100%;  /* Changed from height: 100% to min-height: 100% */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Changed to flex-start to allow content to start from the top */
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 20px;  /* Added margin for better spacing */
+}
+
+/* Title styling */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+.song-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Header */
+.song-table thead th {
+    background-color: #3c6e71;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 15px;
+}
+
+/* Table Cells */
+.song-table td {
+    padding: 15px;
+    font-size: 1.1em;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row color */
+.song-table tbody tr:nth-child(even) {
+    background-color: #f4f6f8;
+}
+
+/* Last Row Bottom Border Removal */
+.song-table tbody tr:last-child td {
+    border-bottom: none;
+}
